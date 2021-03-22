@@ -1,0 +1,9 @@
+{% block content %}
+    {% for weather in weathers %}
+        <div>
+            <p>{{ weather.temperatura }}</p>
+            <p>{{ weather.umidade }} </p>
+            <p>{{ weather.luminosidade }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
